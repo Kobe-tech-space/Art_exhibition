@@ -52,7 +52,7 @@ window.EXHIBITION = {
             works: [
                 { src: 'art/art20.jpg', title: '校园里的清晨', medium: '建筑摄影 · Architecture', year: '2026', distance: '远 · DISTANT', desc: '晨光穿透林隙，在石板路上铺成碎金的河流。风穿过疏朗的枝桠，将光影揉成温柔的掌纹，红旗与白楼在晴蓝的天幕下静静伫立，连空气里，都浮动着独属于校园的、明亮而舒展的气息。', featured: true },
                 { src: 'art/art10.jpg', title: '一砖一是初心', medium: '摄影 · Photography',     year: '2026', distance: '中 · MIDDLE',  desc: '浅灰的楼体如沉默的岩层，藏着跨越山海的地质浪漫。刻有校名的岩石上，每一笔红，都是成理人叩问地球的不悔初心。' },
-                { src: 'art/art12.JPG', title: '香樟食堂里的阳光',    medium: '摄影 · Photography',     year: '2026', distance: '近 · CLOSE',   desc: '阳光为香樟食堂镀上一层暖金，玻璃映着澄澈的蓝天，也映着校园里最鲜活的日常。这是藏在理性学府里，最温柔的烟火气。' },
+                { src: 'art/art12.jpg', title: '香樟食堂里的阳光',    medium: '摄影 · Photography',     year: '2026', distance: '近 · CLOSE',   desc: '阳光为香樟食堂镀上一层暖金，玻璃映着澄澈的蓝天，也映着校园里最鲜活的日常。这是藏在理性学府里，最温柔的烟火气。' },
                 { src: 'art/art3.png', title: '花事中的白楼', medium: '摄影 · Photography',     year: '2026', distance: '极近 · INTIMATE', desc: '晨光漫过校园的广场，白楼与云影在蓝天下舒展。理性的校训静静伫立，而一场盛大的花事，为严谨的学府，晕开了温柔的粉色浪漫。每一朵花，都是写给这里的一封情书。' }
             ]
         },

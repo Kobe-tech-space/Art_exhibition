@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>攀登之路</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Noto+Serif+SC:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Game View -->
+        <div id="game-view" class="view active">
+            <!-- Platformer UI Overlays -->
+            <div id="ui-layer">
+                <div id="top-bar">
+                    <div id="level-title">Level 1</div>
+                    <div id="lives-display">Lives: ❤️❤️❤️❤️❤️</div>
+                    <button id="music-btn">🎵</button>
+                    <div id="score-display" style="display: none;">Score: 0</div>
+                </div>
+                
+                <div id="inventory-display">
+                    <span class="inv-title">Keys:</span>
+                    <div id="slots">
+                        <div class="slot" id="item-0"></div>
+                        <div class="slot" id="item-1"></div>
+                        <div class="slot" id="item-2"></div>
+                        <div class="slot" id="item-3"></div>
+                        <div class="slot" id="item-4"></div>
+                    </div>
+                </div>
+                
+                <!-- Game Over / Level Complete Modal -->
+                <div id="game-modal-container">
+                    <div id="game-modal" class="glass-panel">
+                        <h1 id="modal-title">攀登之路</h1>
+                        <p id="modal-text">使用 W/↑/空格键 跳跃，A/← 向左移动，D/→ 向右移动。<br>向上攀登收集全部5把钥匙！</p>
+                        <div id="modal-actions">
+                            <button id="start-btn" class="choice-btn">开始攀登</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <canvas id="game-canvas"></canvas>
+            <div id="mountain-bg"></div>
+        </div>
+    </div>
+    
+    <audio id="bgm" loop preload="auto">
+        <source src="audio/background.mp3" type="audio/mpeg">
+    </audio>
+    
+    <script src="js/platformer.js"></script>
+</body>
+</html>

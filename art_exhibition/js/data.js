@@ -7,7 +7,7 @@ window.EXHIBITION = {
     title: '光在此处',
     subtitleEn: 'Light Stays Here',
     meta: 'VOL. 01 · 2026 CAMPUS CURATION',
-    heroImage: 'art/art12.JPG',
+    heroImage: 'art/art12.jpg',
     marquee: '光 · 影 · 墙 · 廊 · 窗 · 椅 · 雾 · 暮 · 2026 · LIGHT STAYS HERE · CDUT YIBIN · ',
     facts: [
         { label: '主题', value: '光与日常' },

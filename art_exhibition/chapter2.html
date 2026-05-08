@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>折影 · Chapter 02 — 光在此处</title>
+    <meta name="description" content="第二章 · 折影 — 光在此处云端画展。">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Noto+Sans+SC:wght@300;400;500&family=Noto+Serif+SC:wght@400;500&family=Caveat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="2">
+
+<!-- 自定义光标 · 地质锤 -->
+<div class="cursor" id="cursor" aria-hidden="true">
+    <svg viewBox="0 0 64 64" width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M6 17 L34 17 L56 24 L34 31 L6 31 Z" fill="currentColor" fill-opacity="0.12"/>
+        <line x1="9"  y1="17" x2="9"  y2="31"/>
+        <line x1="34" y1="17" x2="34" y2="31"/>
+        <circle cx="22" cy="24" r="1.6" fill="currentColor"/>
+        <path d="M18 31 L26 60 L32 60 L24 31 Z" fill="currentColor" fill-opacity="0.15"/>
+        <line x1="22" y1="44" x2="30" y2="44"/>
+        <line x1="23" y1="50" x2="30" y2="50"/>
+        <line x1="24" y1="56" x2="31" y2="56"/>
+    </svg>
+</div>
+
+<div class="grain" aria-hidden="true"></div>
+<div class="progress" id="progress" aria-hidden="true"></div>
+
+<header class="nav" id="nav">
+    <a class="nav__brand" id="brandTitle" href="index.html">光与孤 <span>/</span> Light &amp; Solitude</a>
+    <nav class="nav__links" id="navLinks" aria-label="展区导航"></nav>
+</header>
+
+<aside class="indicator" id="indicator" aria-hidden="true"></aside>
+
+<main class="rooms" id="rooms"></main>
+
+<!-- 章节翻页 -->
+<nav class="chapter-nav">
+    <a class="chapter-nav__prev" href="chapter1.html">‹ 第一章 · 晨晖</a>
+    <a class="chapter-nav__next" href="chapter3.html">第三章 · 斑驳 ›</a>
+</nav>
+
+<div class="viewer" id="viewer" role="dialog" aria-modal="true" aria-label="作品查看器">
+    <div class="viewer__counter" id="viewerCounter">01 / 12</div>
+    <button class="viewer__btn viewer__close" id="viewerClose" aria-label="关闭">×</button>
+    <button class="viewer__btn viewer__prev"  id="viewerPrev"  aria-label="上一张">‹</button>
+    <button class="viewer__btn viewer__next"  id="viewerNext"  aria-label="下一张">›</button>
+    <div class="viewer__stage">
+        <img class="viewer__img" id="viewerImg" alt="">
+    </div>
+    <div class="viewer__plaque">
+        <div class="viewer__no" id="viewerNo"></div>
+        <h3 class="viewer__title" id="viewerTitle"></h3>
+        <div class="viewer__meta" id="viewerMeta"></div>
+        <p  class="viewer__desc"  id="viewerDesc"></p>
+        <div class="viewer__index" id="viewerIndex"></div>
+    </div>
+    <div class="viewer__thumbs" id="viewerThumbs" aria-label="缩略图导航"></div>
+</div>
+
+<footer class="footer">
+    <div>光在此处 <span>·</span> Curated Online <span>·</span> 2026</div>
+    <div class="footer__fine">Typography: Cormorant Garamond &amp; Noto Serif SC · No works were harmed in the making of this exhibition.</div>
+</footer>
+
+<audio id="bgm" src="music/bgm.mp3" autoplay muted loop preload="auto" playsinline></audio>
+<button id="bgmToggle" class="bgm-toggle bgm-toggle--pending" type="button" aria-label="播放/暂停背景音乐">
+    <span class="bgm-toggle__icon" aria-hidden="true">
+        <span class="bgm-toggle__wave"></span>
+        <span class="bgm-toggle__wave"></span>
+        <span class="bgm-toggle__wave"></span>
+    </span>
+</button>
+
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
